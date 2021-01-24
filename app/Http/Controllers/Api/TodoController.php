@@ -20,6 +20,7 @@ class TodoController extends Controller
     //view
     public  function  show ($id)
     {
+
         $todo = Todo::findOrFail($id);
 
         if(!$todo)

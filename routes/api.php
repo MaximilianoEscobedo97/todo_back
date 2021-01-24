@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get("/todos",[TodoController::class ,"index"] );
-Route::get("/todo/{id}",[TodoController::class ,"show"]);
+Route::get("/todos/{id}",[TodoController::class ,"show"]);
 Route::post("/todos",[TodoController::class ,"create"]);
 Route::put("/todos/{id}",[TodoController::class ,"update"]);
 Route::patch("/todos/{id}",[TodoController::class ,"updateCompleted"]);
